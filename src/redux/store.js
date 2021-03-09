@@ -1,10 +1,11 @@
 import { createStore } from 'redux';
-import { activity } from './reducers';
+import { activity } from './action';
 
-const defaultState = {
-    activity: 'napping'
+const initialState = {
+    name: 'Boots',
+    activity: 'napping',
 
 }
 
-export const store = createStore(activity, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+export const store = createStore(cat, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
